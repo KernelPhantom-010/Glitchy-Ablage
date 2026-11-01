@@ -16,7 +16,10 @@ captures/
 *.aab
 *.apk
 output-metadata.json
-
+local.properties
+keystore.properties
+*.jks
+*.keystore
 # IntelliJ
 *.iml
 .idea/
