@@ -1,0 +1,7 @@
+# Kopiere diese Datei nach "local.properties" (die ist in .gitignore) und trage deine Werte ein.
+# Android Studio ergänzt sdk.dir automatisch.
+# NUR den anon/public key verwenden - NIEMALS den service_role key in die App!
+supabase.url=https://DEIN-PROJEKT.supabase.co
+supabase.anon=DEIN_ANON_PUBLIC_KEY
+# Web-Client-ID aus der Google Cloud Console (Typ "Web application"), NICHT die Android-Client-ID
+google.web.client.id=1234567890-abcdefg.apps.googleusercontent.com

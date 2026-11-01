@@ -1,0 +1,226 @@
+{
+  "id": "prog",
+  "title": "Programmierung",
+  "titleEn": "Programming",
+  "hours": "20–30",
+  "sections": [
+    {
+      "id": "win",
+      "title": "Windows Internals",
+      "titleEn": "Windows Internals",
+      "lessons": [
+        {
+          "id": "p1.1",
+          "title": "Prozesse & Threads",
+          "titleEn": "Processes & threads",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Ein Prozess ist ein laufendes Programm mit eigenem Speicherbereich (Adressraum). Ein Thread ist ein Ausführungsstrang INNERHALB eines Prozesses. Ein Prozess hat mindestens einen Thread. Alle Threads eines Prozesses teilen sich denselben Speicher – deshalb können sie sich auch gegenseitig in die Quere kommen.",
+              "textEn": "A process is a running program with its own memory (address space). A thread is a line of execution INSIDE a process. Every process has at least one thread. All threads of a process share the same memory – which is why they can get in each other's way."
+            },
+            {
+              "type": "quiz",
+              "prompt": "Was teilen sich alle Threads desselben Prozesses?",
+              "promptEn": "What do all threads of the same process share?",
+              "options": ["Den Adressraum (Speicher)", "Den Stack", "Die CPU-Register", "Nichts"],
+              "correct": 0
+            },
+            {
+              "type": "practice",
+              "prompt": "Wie heißt die Windows-API-Funktion, mit der man einen neuen Prozess startet? (Nur der Funktionsname)",
+              "promptEn": "What is the name of the Windows API function that starts a new process? (function name only)",
+              "answers": ["CreateProcess", "CreateProcessA", "CreateProcessW"],
+              "hint": "Sie beginnt mit Create und endet mit dem Wort für 'Prozess'.",
+              "hintEn": "It starts with Create and ends with the word for 'process'."
+            }
+          ]
+        },
+        {
+          "id": "p1.2",
+          "title": "Handles",
+          "titleEn": "Handles",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Windows gibt dir Objekte (Dateien, Prozesse, Threads …) nie direkt, sondern über ein Handle – eine Art Ticketnummer. Mit dem Handle sagst du Windows, welches Objekt du meinst. Wenn du fertig bist, musst du das Handle wieder zurückgeben, sonst leakt dein Programm Ressourcen.",
+              "textEn": "Windows never hands you objects (files, processes, threads …) directly. You get a handle – like a ticket number. You use it to tell Windows which object you mean. When you are done you must give it back, otherwise your program leaks resources."
+            },
+            {
+              "type": "practice",
+              "prompt": "Wie heißt die Funktion, die ein Handle wieder freigibt?",
+              "promptEn": "What is the function that releases a handle?",
+              "answers": ["CloseHandle"],
+              "hint": "Close + Handle.",
+              "hintEn": "Close + Handle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "title": "Cybersecurity (Web)",
+      "titleEn": "Cybersecurity (Web)",
+      "lessons": [
+        {
+          "id": "p2.1",
+          "title": "HTTP GET mit curl",
+          "titleEn": "HTTP GET with curl",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Wichtig: Teste nur auf Systemen, die dir gehören oder bei denen du ausdrücklich eine Erlaubnis hast. Unerlaubtes Scannen oder Angreifen ist strafbar (in Deutschland u. a. §§ 202a–c StGB).\n\nEin GET-Request holt Daten von einem Server. Mit dem Tool curl geht das im Terminal: curl <URL>",
+              "textEn": "Important: only test systems you own or have explicit permission to test. Unauthorized scanning or attacking is illegal.\n\nA GET request fetches data from a server. With the tool curl you do it in the terminal: curl <URL>"
+            },
+            {
+              "type": "terminal",
+              "prompt": "Sende einen GET-Request an example.com/api/user",
+              "promptEn": "Send a GET request to example.com/api/user",
+              "answers": ["^curl\\s+(-X\\s+GET\\s+)?(https?://)?example\\.com/api/user\\s*$"],
+              "output": "HTTP/1.1 200 OK\nContent-Type: application/json\n\n{ \"user\": \"demo\" }",
+              "hint": "curl, dann die URL.",
+              "hintEn": "curl, then the URL."
+            }
+          ]
+        },
+        {
+          "id": "p2.2",
+          "title": "HTTP POST",
+          "titleEn": "HTTP POST",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Ein POST-Request schickt Daten an einen Server, z. B. ein Login-Formular. Bei curl nutzt du -X POST und mit -d gibst du die Daten mit.",
+              "textEn": "A POST request sends data to a server, e.g. a login form. With curl you use -X POST and pass the data with -d."
+            },
+            {
+              "type": "terminal",
+              "prompt": "Sende per POST die Daten user=admin an example.com/login",
+              "promptEn": "Send the data user=admin via POST to example.com/login",
+              "answers": ["^curl\\s+.*-X\\s+POST.*(-d|--data)\\s+.+login", "^curl\\s+.*(-d|--data)\\s+.+-X\\s+POST.*login"],
+              "output": "HTTP/1.1 401 Unauthorized\n{ \"error\": \"wrong credentials\" }",
+              "hint": "curl -X POST -d 'user=admin' example.com/login",
+              "hintEn": "curl -X POST -d 'user=admin' example.com/login"
+            }
+          ]
+        },
+        {
+          "id": "p2.3",
+          "title": "Ports scannen mit nmap",
+          "titleEn": "Scanning ports with nmap",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "nmap findet offene Ports eines Rechners. Mit -p wählst du Ports aus, z. B. -p 1-1000. Das hier ist nur eine Simulation – scanne in echt nur eigene Systeme (z. B. dein Heimnetz oder eine eigene VM).",
+              "textEn": "nmap finds open ports on a machine. With -p you choose ports, e.g. -p 1-1000. This is only a simulation – in real life only scan your own systems (your home network or your own VM)."
+            },
+            {
+              "type": "terminal",
+              "prompt": "Scanne die Ports 1 bis 1000 von 192.168.1.10",
+              "promptEn": "Scan ports 1 to 1000 of 192.168.1.10",
+              "answers": ["^nmap\\s+-p\\s*1-1000\\s+192\\.168\\.1\\.10\\s*$", "^nmap\\s+192\\.168\\.1\\.10\\s+-p\\s*1-1000\\s*$"],
+              "output": "PORT    STATE SERVICE\n22/tcp  open  ssh\n80/tcp  open  http\n443/tcp open  https",
+              "hint": "nmap -p 1-1000 <IP>",
+              "hintEn": "nmap -p 1-1000 <IP>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bin",
+      "title": "Binary Exploitation",
+      "titleEn": "Binary Exploitation",
+      "lessons": [
+        {
+          "id": "p3.1",
+          "title": "Die mov-Instruction in Assembly",
+          "titleEn": "The mov instruction in assembly",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Assembly sind die Befehle, die die CPU wirklich versteht. Register sind winzige, superschnelle Speicherplätze in der CPU, z. B. eax. Mit mov kopierst du einen Wert: mov ziel, quelle. Beispiel: mov eax, 5 legt die Zahl 5 in eax.",
+              "textEn": "Assembly is what the CPU really understands. Registers are tiny, super fast storage slots inside the CPU, e.g. eax. With mov you copy a value: mov destination, source. Example: mov eax, 5 puts the number 5 into eax."
+            },
+            {
+              "type": "practice",
+              "prompt": "Schreibe den Befehl, der die Zahl 10 in das Register ebx kopiert.",
+              "promptEn": "Write the instruction that copies the number 10 into register ebx.",
+              "answers": ["mov ebx,10", "mov ebx,0xa", "mov ebx,0x0a"],
+              "hint": "mov ziel, quelle",
+              "hintEn": "mov destination, source"
+            }
+          ]
+        },
+        {
+          "id": "p3.2",
+          "title": "Der Stack",
+          "titleEn": "The stack",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Der Stack ist ein Speicherbereich, auf dem Funktionen ihre lokalen Variablen und Rücksprungadressen ablegen. Auf x86 wächst er nach UNTEN, also zu kleineren Adressen. Genau deshalb sind Buffer Overflows möglich: Zu lange Eingaben überschreiben weiter oben liegende Daten – z. B. die Rücksprungadresse.",
+              "textEn": "The stack is a memory region where functions store local variables and return addresses. On x86 it grows DOWNWARDS, towards smaller addresses. This is exactly why buffer overflows are possible: inputs that are too long overwrite data further up – such as the return address."
+            },
+            {
+              "type": "quiz",
+              "prompt": "In welche Richtung wächst der Stack auf x86?",
+              "promptEn": "In which direction does the stack grow on x86?",
+              "options": ["Zu niedrigeren Adressen", "Zu höheren Adressen"],
+              "correct": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rev",
+      "title": "Reverse Engineering",
+      "titleEn": "Reverse Engineering",
+      "lessons": [
+        {
+          "id": "p4.1",
+          "title": "Was macht ein Disassembler?",
+          "titleEn": "What does a disassembler do?",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Beim Reverse Engineering willst du verstehen, was ein fertiges Programm tut – ohne den Quellcode. Ein Disassembler wandelt die Maschinencode-Bytes zurück in lesbare Assembly-Befehle um.",
+              "textEn": "In reverse engineering you want to understand what a finished program does – without the source code. A disassembler turns machine code bytes back into readable assembly instructions."
+            },
+            {
+              "type": "quiz",
+              "prompt": "Was liefert ein Disassembler?",
+              "promptEn": "What does a disassembler output?",
+              "options": ["Lesbare Assembly-Befehle", "Den originalen Quellcode mit Kommentaren", "Eine kompilierte .exe"],
+              "correct": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "finalTest": [
+    {
+      "type": "quiz",
+      "prompt": "Was teilen sich Threads desselben Prozesses?",
+      "promptEn": "What do threads of the same process share?",
+      "options": ["Den Adressraum", "Nichts", "Eigene Prozess-IDs"],
+      "correct": 0
+    },
+    {
+      "type": "practice",
+      "prompt": "Funktion zum Freigeben eines Handles?",
+      "promptEn": "Function that releases a handle?",
+      "answers": ["CloseHandle"]
+    },
+    {
+      "type": "terminal",
+      "prompt": "Sende einen GET-Request an example.com/api/user",
+      "promptEn": "Send a GET request to example.com/api/user",
+      "answers": ["^curl\\s+(-X\\s+GET\\s+)?(https?://)?example\\.com/api/user\\s*$"],
+      "output": "HTTP/1.1 200 OK"
+    }
+  ]
+}

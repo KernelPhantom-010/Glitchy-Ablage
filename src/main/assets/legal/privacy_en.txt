@@ -1,0 +1,44 @@
+PRIVACY POLICY – GLITCHY
+(TEMPLATE – fill in all [brackets] and have it reviewed by a qualified person. This is not legal advice.)
+
+Last updated: [DATE]
+
+1. CONTROLLER
+Fabio Baensch
+[Street and number]
+[Postal code, city], Germany
+Email: [CONTACT EMAIL]
+
+2. OVERVIEW
+Glitchy is a learning app for mathematics and programming. We only process the data needed for your account, learning progress, leaderboards and certificates. The app contains no advertising and no analytics or tracking services.
+
+3. WHAT DATA WE PROCESS AND WHY
+a) Account: email address and password (stored only as a hash), and when using Google sign-in the email address provided by Google. Purpose: login and account management. Legal basis: Art. 6(1)(b) GDPR (contract).
+b) Profile: username and an optional profile picture. Both are PUBLICLY VISIBLE to other users on the leaderboards. Legal basis: Art. 6(1)(b) GDPR; the profile picture is voluntary (Art. 6(1)(a) GDPR) and can be replaced at any time. Please do not upload pictures showing other people.
+c) Learning progress and test results: completed lessons, test results. Purpose: progress display, certificates. Legal basis: Art. 6(1)(b) GDPR.
+d) Activity data: the days on which you solved a task or completed the daily challenge. Purpose: leaderboards (7 days, 30 days, lifetime), visible to others together with your username. Legal basis: Art. 6(1)(b) GDPR.
+e) Certificates: the name you enter when creating a certificate, plus module, result and date. These are stored so a certificate can be verified by its ID. Legal basis: Art. 6(1)(a) and (b) GDPR.
+f) Reports: if you report a user for inappropriate content we store the report. Legal basis: Art. 6(1)(f) GDPR (protecting the community).
+g) Reminders: the daily reminder is scheduled locally on your device. No data is sent to us for this.
+
+4. RECIPIENTS / PROCESSORS
+- Supabase, Inc. (database, authentication, file storage). Server location: [REGION, e.g. EU (Frankfurt)]. A data processing agreement is in place; Standard Contractual Clauses are used for transfers to third countries.
+- Google (only if you sign in with Google): Google LLC receives the sign-in request. Google's own privacy policy also applies.
+
+5. RETENTION
+We store your data as long as your account exists. If you delete your account in the app (Profile → Delete account permanently), your profile, profile picture, progress, test results, activity data and certificate data are deleted.
+
+6. YOUR RIGHTS
+You have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), data portability (Art. 20) and objection (Art. 21 GDPR), and the right to withdraw consent at any time with effect for the future. Write to the email address above. You also have the right to lodge a complaint with a data protection supervisory authority.
+
+7. AGE LIMIT
+The app is intended for people aged 16 and over. If you are younger, please only use the app with the consent of your parents or guardians.
+
+8. SECURITY
+Data is transmitted encrypted (HTTPS). Access rules (Row Level Security) ensure that each user can only change their own data.
+
+9. CHANGES
+We may update this policy. The current version is available in the app.
+
+10. LEARNING CONTENT – NOTICE
+The content (e.g. cybersecurity) is for education only. Only apply what you learn to your own systems or with explicit permission. Certificates are certificates of participation without official accreditation.

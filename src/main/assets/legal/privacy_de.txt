@@ -1,0 +1,44 @@
+DATENSCHUTZERKLÄRUNG – GLITCHY
+(VORLAGE – bitte alle [eckigen Klammern] ausfüllen und von einer fachkundigen Stelle prüfen lassen. Das ist keine Rechtsberatung.)
+
+Stand: [DATUM]
+
+1. VERANTWORTLICHER
+Fabio Baensch
+[Straße und Hausnummer]
+[PLZ Ort], Deutschland
+E-Mail: [KONTAKT-E-MAIL]
+
+2. ÜBERBLICK
+Glitchy ist eine Lern-App für Mathematik und Programmierung. Wir verarbeiten nur die Daten, die für Konto, Lernfortschritt, Ranglisten und Zertifikate nötig sind. Die App enthält keine Werbung und keine Analyse- oder Tracking-Dienste.
+
+3. WELCHE DATEN WIR VERARBEITEN UND WOZU
+a) Konto: E-Mail-Adresse und Passwort (das Passwort wird nur als Hash gespeichert) sowie bei Google-Anmeldung die von Google übermittelte E-Mail-Adresse. Zweck: Anmeldung und Kontoverwaltung. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Nutzungsvertrag).
+b) Profil: Username und optional ein Profilbild. Beides ist für andere Nutzer in den Ranglisten ÖFFENTLICH SICHTBAR. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO; das Profilbild ist freiwillig (Art. 6 Abs. 1 lit. a DSGVO) und kann jederzeit ersetzt werden. Bitte lade kein Bild hoch, das andere Personen zeigt.
+c) Lernfortschritt und Testergebnisse: abgeschlossene Lektionen, Testergebnisse. Zweck: Fortschrittsanzeige, Zertifikate. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.
+d) Aktivitätsdaten: an welchen Tagen du eine Aufgabe gelöst bzw. die Daily Challenge erledigt hast. Zweck: Ranglisten (7 Tage, 30 Tage, Lifetime), die für andere mit deinem Usernamen sichtbar sind. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.
+e) Zertifikate: der Name, den du bei der Erstellung eines Zertifikats eingibst, sowie Modul, Ergebnis und Datum. Diese Angaben werden gespeichert, damit ein Zertifikat über seine ID überprüft werden kann. Rechtsgrundlage: Art. 6 Abs. 1 lit. a und b DSGVO.
+f) Meldungen: Meldest du einen Nutzer wegen unangemessener Inhalte, speichern wir die Meldung. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Schutz der Community).
+g) Erinnerungen: Die tägliche Erinnerung wird lokal auf deinem Gerät geplant. Dafür werden keine Daten an uns übertragen.
+
+4. EMPFÄNGER / AUFTRAGSVERARBEITER
+- Supabase, Inc. (Datenbank, Authentifizierung, Dateispeicher). Serverstandort: [REGION, z. B. EU (Frankfurt)]. Mit Supabase besteht ein Auftragsverarbeitungsvertrag; bei Übermittlung in Drittländer werden Standardvertragsklauseln verwendet.
+- Google (nur bei Anmeldung mit Google): Google LLC erhält die Anmeldeanfrage. Es gilt zusätzlich die Datenschutzerklärung von Google.
+
+5. SPEICHERDAUER
+Wir speichern deine Daten, solange dein Konto besteht. Wenn du dein Konto in der App löschst (Profil → Konto endgültig löschen), werden Profil, Profilbild, Fortschritt, Testergebnisse, Aktivitätsdaten und Zertifikatsdaten gelöscht.
+
+6. DEINE RECHTE
+Du hast das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21 DSGVO) sowie das Recht, eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen. Schreibe dazu an die oben genannte E-Mail-Adresse. Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
+
+7. ALTERSGRENZE
+Die App richtet sich an Personen ab 16 Jahren. Bist du jünger, nutze die App bitte nur mit Zustimmung deiner Erziehungsberechtigten.
+
+8. SICHERHEIT
+Die Übertragung erfolgt verschlüsselt (HTTPS). Der Zugriff auf Daten ist durch Zugriffsregeln (Row Level Security) so beschränkt, dass jeder Nutzer nur seine eigenen Daten ändern kann.
+
+9. ÄNDERUNGEN
+Wir können diese Erklärung anpassen. Die aktuelle Fassung findest du in der App.
+
+10. LERNINHALTE – HINWEIS
+Die Inhalte (z. B. Cybersecurity) dienen ausschließlich der Weiterbildung. Wende das Gelernte nur an eigenen Systemen oder mit ausdrücklicher Erlaubnis an. Zertifikate sind Teilnahmebescheinigungen ohne staatliche Anerkennung.
